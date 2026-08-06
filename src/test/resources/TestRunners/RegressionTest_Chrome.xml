@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Trading App Test Regression Suite" verbose="4" thread-count="5" parallel="tests">
+	<test name="Account Page Test_chrome">
+		<parameter name ="browser" value = "chrome"/>
+		<classes>
+			<class name="com.qa.Trading.tests.AccountsPageTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Login Page Test_chrome">
+		<parameter name ="browser" value = "chrome"/>
+		<classes>
+			<class name="com.qa.Trading.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+
+	<test name="Product Info Test_chrome">
+		<parameter name ="browser" value = "chrome"/>
+		<classes>
+			<class name="com.qa.Trading.tests.ProductInfoTest" />
+		</classes>
+
+	</test>
+
+</suite>
