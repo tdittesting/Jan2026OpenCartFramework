@@ -47,7 +47,7 @@ public class LoginPageTest extends BaseTest{
 	@Description("Checking open cart login page URL")
 	@Severity(SeverityLevel.NORMAL)
 	@Owner("TDIT")
-	@Test(description = "URL test...")
+	@Test(description = "URL test")
 	public void loginPageURLTest() {
 		String acctURL = loginPage.getLoginPageURL();
 		Assert.assertTrue(acctURL.contains(LOGIN_PAGE_FRACTION_URL));
