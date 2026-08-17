@@ -124,6 +124,9 @@ public class DriverFactory {
 				case "prod":
 					ip = new FileInputStream("./src/test/resources/config/prod.config.properties");
 					break;
+				case "test":
+					ip = new FileInputStream("./src/test/resources/config/test.config.properties");
+					break;
 				default:
 					log.error("---Invalid env name----"+envName);
 					throw new BrowserException("---Invalid env name----: "+envName);

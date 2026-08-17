@@ -20,6 +20,7 @@ import com.qa.Trading.pages.LoginPage;
 import com.qa.Trading.pages.ProductInfoPage;
 import com.qa.Trading.pages.RegisterPage;
 import com.qa.Trading.pages.SearchResultsPage;
+import com.qa.Trading.pages.TOIPage;
 import com.qa.Trading.utils.LogUtil;
 
 //@Listeners(ChainTestListener.class)
@@ -33,6 +34,7 @@ public class BaseTest {
 	protected SearchResultsPage searchResultsPage;
 	protected ProductInfoPage productInfoPage;
 	protected RegisterPage registerPage; 
+	protected TOIPage toiPage;
 	
 	
 	@Parameters({"browser"})
@@ -48,6 +50,7 @@ public class BaseTest {
 		
 		driver = df.initDriver(prop);//threadlocal driver
 		loginPage = new LoginPage(driver);
+//		toiPage = new TOIPage(driver);
 	}
 	
 	@BeforeMethod

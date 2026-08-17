@@ -20,8 +20,23 @@ public class AppConstants {
 															  "Newsletter");
 	
 	
+	public static List<String> expMenuList = Arrays.asList("Videos",
+			  "City",
+			  "India",
+			  "World",
+			  "Business",
+			  "Tech",
+			  "Gadgets Now",
+			  "Cricket",
+			  "Sports",
+			  "Entertainment",
+			  "Astro",
+			  "TOI Women",
+			  "TV");
+	
 	public static final String REGISTER_SUCCESS_MSG = "Your Account Has Been Created!";
 	
 	//******************Sheet name***************/
 	public static final String REGISTER_SHEET_NAME = "Register";
+	public static final String TOI_SHEET_NAME = "MenuItems";
 }
