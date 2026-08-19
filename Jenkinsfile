@@ -25,6 +25,11 @@ pipeline
             }
         }
         
+        stage("Deploy to Dev"){
+            steps{
+                echo("deploy to Dev done")
+            }
+        }
         
         
         stage("Deploy to QA"){
@@ -32,7 +37,6 @@ pipeline
                 echo("deploy to qa done")
             }
         }
-        
         
         
                 
@@ -91,7 +95,6 @@ pipeline
         }
         
         
-        
         stage('Publish sanity ChainTest Report'){
             steps{
                      publishHTML([allowMissing: false,
@@ -107,7 +110,7 @@ pipeline
         
         stage("Deploy to PROD"){
             steps{
-                echo("deploy to PROD")
+                echo("deploy to PROD..")
             }
         }
         

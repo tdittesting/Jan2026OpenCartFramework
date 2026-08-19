@@ -106,7 +106,7 @@
 					<!--
 						<suiteXmlFile>src/test/resources/TestRunners/SanityTest_Chrome.xml</suiteXmlFile>
 						-->
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>	
 					</suiteXmlFiles>
 
 					<argLine>
